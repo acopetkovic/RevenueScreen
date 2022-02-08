@@ -12,7 +12,7 @@ import {
 
 
 
-// === Screens === // 
+// === SCREENS === // 
 import RevenueDetailsScreen from './src/screens/revenueDetailsScreen';
 
 

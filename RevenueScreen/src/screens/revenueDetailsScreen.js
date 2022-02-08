@@ -5,7 +5,7 @@ import {
   View,
 } from 'react-native';
 
-// === COMPONENTS ==//
+// === COMPONENTS == //
 import ProjectDetailsComponent from '../components/projectDetailsComponent';
 import ReceiptComponent from '../components/receiptComponent';
 

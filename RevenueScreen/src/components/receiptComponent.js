@@ -6,8 +6,9 @@ import {
   Image,
   Text
 } from 'react-native';
-import ProjectDetailsComponent from './projectDetailsComponent';
 
+// == MOLECULES == //
+import ReceiptDetails from './molecules/receiptDetailsComponent';
 
 
 const ReceiptComponent = () => {
@@ -29,21 +30,18 @@ const ReceiptComponent = () => {
             <Text style={styles.profileTxt}>11 Aug 2018</Text>
         </View>
         <View style={styles.receiptDetailsContainer}>
-            <View style={styles.receiptDetailsItem}>
-                <View style={styles.receiptDetailsIcon}></View>
-                <View style={styles.receiptDetailsAmountText}><Text>Amount due</Text></View>
-                <View style={styles.receiptDetailsRightAmountText}><Text>$14,312</Text></View>
-            </View>
-            <View style={styles.receiptDetailsItem}>
-                <View style={styles.receiptDetailsIcon}></View>
-                <View style={styles.receiptDetailsAmountText}><Text>Amount paid</Text></View>
-                <View style={styles.receiptDetailsRightAmountText}><Text>$14,312</Text></View>
-            </View>
-            <View style={styles.receiptDetailsItem}>
-                <View style={styles.receiptDetailsIcon}></View>
-                <View style={styles.receiptDetailsAmountText}><Text>Outstanding debt</Text></View>
-                <View style={styles.receiptDetailsRightAmountText}><Text>$0</Text></View>
-            </View>
+          <ReceiptDetails receiptDetailsIcon = '' 
+                          receiptDetailsText = "Amount due"
+                          receiptDetailsAmountText = '14,312'
+          />
+          <ReceiptDetails receiptDetailsIcon = '' 
+                          receiptDetailsText = "Amount paid"
+                          receiptDetailsAmountText = '14,312'
+          />
+          <ReceiptDetails receiptDetailsIcon = '' 
+                          receiptDetailsText = "Outstanding debt"
+                          receiptDetailsAmountText = '0'
+          />
         </View>
     </View>
   );
@@ -104,32 +102,6 @@ const styles = StyleSheet.create({
       width: '100%',
       height: '40%',
       alignItems: 'center'
-  },
-  receiptDetailsItem:{
-    flexDirection: 'row',
-    width: '90%',
-    height: '25%',
-    marginTop: '2.5%',
-    alignItems: 'center',
-    
-  },
-  receiptDetailsIcon:{
-    width: 40,
-    height: 40,
-    borderRadius: 100,
-    backgroundColor: '#EFF2F2'
-  },
-  receiptDetailsText:{
-    marginLeft: '5%'
-  },
-  receiptDetailsAmountText:{
-    width: '40%',
-    marginLeft: '5%',
-  },
-  receiptDetailsRightAmountText:{
-    width: '40%',
-    marginLeft: '5%',
-    alignItems: 'flex-end'
   }
 });
 
