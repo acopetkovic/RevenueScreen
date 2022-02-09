@@ -4,6 +4,8 @@ import {
   View,
 } from 'react-native';
 
+
+
 // === MOLECULES === //
 import ProjectDetailsCard from './molecules/projectDetailsCardComponent'
 
